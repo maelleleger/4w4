@@ -13,13 +13,20 @@ Text Domain: theme-Maelle
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #3b5567;
-  --couleur-arriere-accueil: #647a8a;
-  --couleur-arriere-evenement: rgb(128, 128, 128);
-  --couleur-arriere-galerie: rgb(113, 92, 92);
-  --couleur-arriere-footer: rgb(130, 62, 62);
+  --couleur-arriere-entete: hsl(6, 90%, 78%);
+  --couleur-arriere-accueil: hsl(39, 90%, 78%);
+  --couleur-arriere-evenement: hsl(119, 90%, 78%);
+  --couleur-arriere-galerie: hsl(192, 90%, 78%);
+  --couleur-arriere-footer: hsl(251, 90%, 78%);
   --largeur-zone-centrale: 100vw;
-  --transparence: rgba(0, 0, 0, 0.50);
+  --transparence: rgba(0, 0, 0, 0.51);
+  --couleur-entete: hsl(0, 100%, 18%);
+  --couleur-accueil: hsl(34, 100%, 15%);
+  --couleur-evenement: hsl(129, 100%, 13%);
+  --couleur-galerie: hsl(192, 100%, 13%);
+  --couleur-footer: hsl(251, 100%, 14%);
+  --largeur-zone-centrale: 100vw;
+  --transparence: rgba(0, 0, 0, 0.51);
 }
 
 * {
@@ -52,22 +59,27 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
 
 /*
