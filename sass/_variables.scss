@@ -6,12 +6,21 @@
     // --couleur-arriere-footer : rgb(130, 62, 62);
     // --largeur-zone-centrale : 100vw;
     // --transparence : rgba(0, 0, 0, 0.51);
+    --nb-element : 5;
+    --increment-angle : calc(360 / var(--nb-element));
+    // 360/5 = 72
+    --angle-initial : 180;
+    --hu1 : calc(var(--angle-initial));
+    --hu2 : calc(var(--hu1) + var(--increment-angle));
+    --hu3 : calc(var(--hu2) + var(--increment-angle));
+    --hu4 : calc(var(--hu3) + var(--increment-angle));
+    --hu5 : calc(var(--hu4) + var(--increment-angle));
 
-    --couleur-arriere-entete : hsl(6, 90%, 78%);
-    --couleur-arriere-accueil : hsl(39, 90%, 78%);
-    --couleur-arriere-evenement : hsl(119, 90%, 78%);
-    --couleur-arriere-galerie : hsl(192, 90%, 78%);
-    --couleur-arriere-footer : hsl(251, 90%, 78%);
+    --couleur-arriere-entete : hsl(var(--hu1), 90%, 78%);
+    --couleur-arriere-accueil : hsl(var(--hu2), 90%, 78%);
+    --couleur-arriere-evenement : hsl(var(--hu3), 90%, 78%);
+    --couleur-arriere-galerie : hsl(var(--hu4), 90%, 78%);
+    --couleur-arriere-footer : hsl(var(--hu5), 90%, 78%);
     --largeur-zone-centrale : 100vw;
     --transparence : rgba(0, 0, 0, 0.51);
 
