@@ -23,26 +23,32 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border : 1px solid #aaa;
 }
 
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
+    position: relative;
 }
 #accueil{
     background-color: var(--couleur-arriere-accueil);
     color: var(--couleur-accueil);
+    position: relative;
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-evenement);
+    position: relative;
 }
 #galerie{
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
+    z-index: 1;
+    background: linear-gradient(180deg, var(--couleur-arriere-evenement), var(--couleur-arriere-galerie), var(--couleur-arriere-galerie));
 }
 #footer{
     background-color: var(--couleur-arriere-footer);
     color: var(--couleur-footer);
+    position: relative;
+    z-index: 2;
 }

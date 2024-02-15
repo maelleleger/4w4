@@ -1,0 +1,58 @@
+.vague {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.vague svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 96px;
+}
+
+.vague .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .vague svg {
+        width: calc(100% + 1.3px);
+        height: 58px;
+    }
+}
+
+.vagueFooter {
+    position: absolute;
+    z-index: 2;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.vagueFooter svg {
+    position: relative;
+    display: block;
+    width: calc(201% + 1.3px);
+    height: 84px;
+    transform: rotateY(180deg);
+}
+
+.vagueFooter .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .vagueFooter svg {
+        width: calc(201% + 1.3px);
+        height: 58px;
+    }
+}

@@ -1,14 +1,21 @@
-# labo1
-## intro à sass de plusieurs sections qui contient éléments
+# labo2
+## technique de création de palette de couleur avec la fonction hsl
+## ajouter des effets de vagues et une diagonale
+
+## poursuit les modifications du labo1
 
 - dossiers sass
-- normalize.css
 - style.css
+- utilisation de différentes techniques pour élaborer une palette de couleur
+- utilisation de la règle 60-30-10
 
-à réaliser L
+à réaliser :
 - compléter chacune des règles de style des éléments H 
 - changer les couleus de background et couleur des H
+- ajouter les éléments boutons, liens a, blockquotes
 - améliorer le design général sans être trop spécifique 
-- Ajouter 2 variables
+- Ajouter plusieurs variables
 - Créer plusieurs commit 
-- Github-page :
+- faire une github page
+
+### lien de ma github page : 
