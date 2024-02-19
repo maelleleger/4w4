@@ -32,6 +32,11 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-evenement: hsl(var(--hu2), var(--s-couleur-arriere), 70%);
   --couleur-arriere-galerie: hsl(var(--hu5), var(--s-couleur-arriere), 80%);
   --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), 85%);
+  --couleur-arriere-entete: hsl(var(--hu5), var(--s-couleur-arriere), 20%);
+  --couleur-arriere-accueil: hsl(var(--hu3), var(--s-couleur-arriere), 25%);
+  --couleur-arriere-evenement: hsl(var(--hu2), var(--s-couleur-arriere), 30%);
+  --couleur-arriere-galerie: hsl(var(--hu5), var(--s-couleur-arriere), 35%);
+  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), 40%);
 }
 
 * {
@@ -45,16 +50,24 @@ body {
   font-family: "prompt", sans-serif;
 }
 
+header {
+  z-index: 3;
+}
+
 .global {
   display: flex;
   justify-content: center;
   min-height: 40vh;
 }
 
+.global > header {
+  flex: 0 1 1300px;
+}
+
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,19 +106,6 @@ body {
   color: var(--couleur-footer);
   position: relative;
   z-index: 2;
-}
-
-.bouton {
-  background-color: var(--couleur-arriere-accueil);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 3px solid black;
 }
 
 .citation {
@@ -227,4 +227,53 @@ h6 {
   z-index: -1;
   transform: skewY(-5deg);
   background-color: var(--couleur-arriere-galerie);
+}
+
+.entete__header {
+  background-image: url("images/amongUs.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+button {
+  background-image: linear-gradient(90deg, red, green);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.btnEvent {
+  background-image: linear-gradient(90deg, red, green);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 3px solid black;
+  transition: background-image 1s ease, border 1s ease;
+}
+.btnEvent:hover {
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  border: 3px solid black;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: black;
+}
+a:focus {
+  color: red;
+}
+a:visited {
+  color: 0;
 }/*# sourceMappingURL=style.css.map */

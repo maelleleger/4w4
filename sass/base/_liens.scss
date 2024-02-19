@@ -1,0 +1,13 @@
+a{
+    color: white;
+
+    &:hover{
+        color: black;
+    }
+    &:focus{
+        color: red;
+    }
+    &:visited{
+        color: blue($color: #000000);
+    }
+}
