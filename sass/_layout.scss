@@ -40,18 +40,20 @@ header{
     display: flex;
     flex-direction: column;
     background-color: var(--couleur-arriere-accueil);
-    color: var(--couleur-accueil);
+    color: rgb(255, 252, 233);
     position: relative;
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-evenement);
     position: relative;
+    color: rgb(253, 212, 212);
 }
 #galerie{
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
     z-index: 1;
+    color: rgb(217, 242, 253);
     background: linear-gradient(180deg, var(--couleur-arriere-evenement), var(--couleur-arriere-galerie), var(--couleur-arriere-galerie));
 }
 #footer{
@@ -59,24 +61,12 @@ header{
     color: var(--couleur-footer);
     position: relative;
     z-index: 2;
+    color: white;
 }
-
-// button {
-//     background-color: var(--couleur-arriere-accueil);
-//     border: none;
-//     color: rgb(255, 0, 0);
-//     padding: 15px 32px;
-//     text-align: center;
-//     text-decoration: none;
-//     display: inline-block;
-//     font-size: 16px;
-//     border-radius: 10px;
-//     border: 3px solid black;
-// }
 
 .citation {
     background: var(--couleur-arriere-evenement);
-    border: 3px solid black;
+    border: 3px solid rgb(69, 6, 6);
     margin: 1.5em 10px;
     padding: 2em 30px;
     border-radius: 10px;

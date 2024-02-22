@@ -1,5 +1,5 @@
-button {
-    background-image: linear-gradient(90deg, red, green);
+.btnFooter {
+    background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
@@ -8,11 +8,15 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid rgb(88, 0, 0);
+
+    &:hover{
+        border: 5px solid rgb(88, 0, 0);
+     }
 }
 
 .btnEvent{
-    background-image: linear-gradient(90deg, red, green);
+    background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
@@ -21,15 +25,26 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    border: 3px solid black;
-    transition: background-image 1s ease, border 1s ease;
+    border: 3px solid rgb(88, 0, 0);
+    margin-top: 2rem;
 
-    &:hover{ //nouvelle façon d'écrire les hover
-       background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
-       border: 3px solid black;
+    &:hover{
+        border: 5px solid rgb(88, 0, 0);
     }
+}
 
-    &:active{
+.recherche_bouton{
+    background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    border: 3px solid rgb(88, 0, 0);
 
+    &:hover{
+        border: 5px solid rgb(88, 0, 0);
     }
 }

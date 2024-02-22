@@ -2,12 +2,12 @@ a{
     color: white;
 
     &:hover{
-        color: black;
+        color: rgb(88, 0, 0);
     }
     &:focus{
-        color: red;
+        color: rgb(0, 0, 0);
     }
     &:visited{
-        color: blue($color: #000000);
+        color: blue($color: #0026ff);
     }
 }

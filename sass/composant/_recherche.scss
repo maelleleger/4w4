@@ -1,0 +1,15 @@
+.recherche{
+    display: flex;
+    gap: 1rem;
+}
+
+.recherche_input{
+    border: 3px solid rgb(88, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(255, 210, 210, 0.779);
+}
+
+.recherche_input::placeholder{
+    color: rgb(88, 0, 0);
+    font-size: 1.2rem;
+}
