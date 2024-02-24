@@ -70,15 +70,3 @@ header{
     padding: 2em 30px;
     border-radius: 10px;
   }
-
-
-///////////////////////// format d'ordinateur de bureau /////////////////////////////////
-  @media (min-width: 1000px){
-    #entete{
-        display: flex;
-        background-color: var(--couleur-arriere-entete);
-        color: black;
-        position: relative;
-        flex-direction: row;
-    }
-  }

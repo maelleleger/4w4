@@ -37,6 +37,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-evenement: hsl(var(--hu2), var(--s-couleur-arriere), 30%);
   --couleur-arriere-galerie: hsl(var(--hu5), var(--s-couleur-arriere), 35%);
   --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), 40%);
+  --couleur-rouge-foncee: rgb(88, 0, 0);
+  --couleur-rouge-clair: rgb(171, 51, 51);
+  --couleur-brun-clair: rgb(121, 85, 85);
 }
 
 * {
@@ -118,15 +121,6 @@ header {
   border-radius: 10px;
 }
 
-@media (min-width: 1000px) {
-  #entete {
-    display: flex;
-    background-color: var(--couleur-arriere-entete);
-    color: black;
-    position: relative;
-    flex-direction: row;
-  }
-}
 /*
 https://chrisburnell.com/clamp-calculator/
 */
@@ -265,7 +259,7 @@ h6 {
   }
 }
 .btnFooter {
-  background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
+  background-image: linear-gradient(90deg, var(--couleur-brun-clair), var(--couleur-rouge-clair));
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
@@ -273,7 +267,7 @@ h6 {
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
-  border: 3px solid rgb(88, 0, 0);
+  border: 3px solid var(--couleur-rouge-foncee);
 }
 .btnFooter:hover {
   background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
@@ -281,7 +275,7 @@ h6 {
 }
 
 .btnEvent {
-  background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
+  background-image: linear-gradient(90deg, var(--couleur-brun-clair), var(--couleur-rouge-clair));
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
@@ -289,7 +283,7 @@ h6 {
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
-  border: 3px solid rgb(88, 0, 0);
+  border: 3px solid var(--couleur-rouge-foncee);
   margin-top: 2rem;
 }
 .btnEvent:hover {
@@ -299,14 +293,14 @@ h6 {
 }
 
 .recherche_bouton {
-  background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
+  background-image: linear-gradient(90deg, var(--couleur-brun-clair), var(--couleur-rouge-clair));
   color: rgb(255, 255, 255);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
-  border: 3px solid rgb(88, 0, 0);
+  border: 3px solid var(--couleur-rouge-foncee);
 }
 .recherche_bouton:hover {
   background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
@@ -332,6 +326,12 @@ footer {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+footer .recherche, .sociaux, .btnFooter {
+  margin-bottom: 5rem;
 }
 
 .recherche {
@@ -359,7 +359,7 @@ footer {
 }
 
 .sociaux path {
-  color: rgb(88, 0, 0);
+  color: var(--couleur-rouge-foncee);
 }
 .sociaux path:hover {
   color: rgb(210, 246, 255);

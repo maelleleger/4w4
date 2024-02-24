@@ -4,4 +4,10 @@ footer{
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+footer .recherche, .sociaux, .btnFooter{
+    margin-bottom: 5rem;
 }

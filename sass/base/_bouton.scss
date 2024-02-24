@@ -1,5 +1,5 @@
 .btnFooter {
-    background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
+    background-image: linear-gradient(90deg, var(--couleur-brun-clair), var(--couleur-rouge-clair));
     color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
@@ -7,7 +7,7 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    border: 3px solid rgb(88, 0, 0);
+    border: 3px solid var(--couleur-rouge-foncee);
 
     &:hover{
         background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
@@ -16,7 +16,7 @@
 }
 
 .btnEvent{
-    background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
+    background-image: linear-gradient(90deg, var(--couleur-brun-clair), var(--couleur-rouge-clair));
     color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
@@ -24,7 +24,7 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    border: 3px solid rgb(88, 0, 0);
+    border: 3px solid var(--couleur-rouge-foncee);
     margin-top: 2rem;
 
     &:hover{
@@ -35,14 +35,14 @@
 }
 
 .recherche_bouton{
-    background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
+    background-image: linear-gradient(90deg, var(--couleur-brun-clair), var(--couleur-rouge-clair));
     color: rgb(255, 255, 255);
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 10px;
-    border: 3px solid rgb(88, 0, 0);
+    border: 3px solid var(--couleur-rouge-foncee);
 
     &:hover{
         background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
