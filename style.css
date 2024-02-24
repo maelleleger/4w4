@@ -107,7 +107,6 @@ header {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
   position: relative;
-  z-index: 2;
   color: white;
 }
 
@@ -119,6 +118,15 @@ header {
   border-radius: 10px;
 }
 
+@media (min-width: 1000px) {
+  #entete {
+    display: flex;
+    background-color: var(--couleur-arriere-entete);
+    color: black;
+    position: relative;
+    flex-direction: row;
+  }
+}
 /*
 https://chrisburnell.com/clamp-calculator/
 */
@@ -233,15 +241,31 @@ h6 {
 }
 
 .entete__header {
-  background-image: url("images/amongUs.png");
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/html5Logo.png");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 50% 100%;
+  background-size: 15rem;
   color: rgb(200, 245, 255);
 }
 
+.entete__header h1, h2, h4 {
+  margin-bottom: 10rem;
+}
+
+.entete__header .btnEvent {
+  margin-bottom: 25rem;
+}
+
+@media (min-width: 1000px) {
+  .entete__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .btnFooter {
   background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
-  border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
@@ -252,12 +276,12 @@ h6 {
   border: 3px solid rgb(88, 0, 0);
 }
 .btnFooter:hover {
-  border: 5px solid rgb(88, 0, 0);
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  border: 3px solid rgb(0, 0, 0);
 }
 
 .btnEvent {
   background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
-  border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
@@ -269,12 +293,13 @@ h6 {
   margin-top: 2rem;
 }
 .btnEvent:hover {
-  border: 5px solid rgb(88, 0, 0);
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  border: 3px solid rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .recherche_bouton {
   background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
-  border: none;
   color: rgb(255, 255, 255);
   padding: 5px 5px;
   text-align: center;
@@ -284,7 +309,8 @@ h6 {
   border: 3px solid rgb(88, 0, 0);
 }
 .recherche_bouton:hover {
-  border: 5px solid rgb(88, 0, 0);
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  border: 3px solid rgb(0, 0, 0);
 }
 
 a {
@@ -334,4 +360,7 @@ footer {
 
 .sociaux path {
   color: rgb(88, 0, 0);
+}
+.sociaux path:hover {
+  color: rgb(210, 246, 255);
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,26 @@
 .entete__header {
-    background-image: url("images/amongUs.png");
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/html5Logo.png");
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 50% 100%;
+    background-size: 15rem;
     color: rgb(200, 245, 255);
+}
+
+.entete__header h1, h2, h4 {
+    margin-bottom: 10rem;
+}
+.entete__header .btnEvent{
+    margin-bottom: 25rem;
+}
+
+
+/////////////////// format ordinateur /////////////////////////////
+// ça ne fonctionne pas, je ne sais pas pourquoi
+@media (min-width: 1000px){
+    .entete__header{
+        flex-direction: row;
+        align-items: center;
+    }
 }

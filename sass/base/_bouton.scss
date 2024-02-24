@@ -1,6 +1,5 @@
 .btnFooter {
     background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
-    border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
@@ -11,13 +10,13 @@
     border: 3px solid rgb(88, 0, 0);
 
     &:hover{
-        border: 5px solid rgb(88, 0, 0);
+        background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        border: 3px solid rgb(0, 0, 0);
      }
 }
 
 .btnEvent{
     background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
-    border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
@@ -29,13 +28,14 @@
     margin-top: 2rem;
 
     &:hover{
-        font-size: 5rem;
+        background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        border: 3px solid rgb(0, 0, 0);
+        cursor: pointer;
     }
 }
 
 .recherche_bouton{
     background-image: linear-gradient(90deg, rgb(121, 85, 85), rgb(171, 51, 51));
-    border: none;
     color: rgb(255, 255, 255);
     padding: 5px 5px;
     text-align: center;
@@ -45,6 +45,7 @@
     border: 3px solid rgb(88, 0, 0);
 
     &:hover{
-        font-size: 5rem;
+        background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        border: 3px solid rgb(0, 0, 0);
     }
 }
