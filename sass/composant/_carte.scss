@@ -1,0 +1,13 @@
+.section_cours{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.carte{
+    display: flex;
+    border: 1px solid gray;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 25%;
+    background-color: vhsl(var(--couleur-accueil));
+}

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thème du groupe #1</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="<?php echo get_template_directory_url() . '/normalize.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_url() . '/style.css'; ?>">
+
+
+    <link rel="preconnect" href=" https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="">
 </head>
 <body>
     <div id="entete" class="global">
@@ -28,6 +29,26 @@
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2>
+            <div class="section_cours"></div>
+                <?php
+                // boucle pour afficher tous les posts
+                    // if (have_posts()){
+                    //     while(have_posts()){
+                    //         the_post();
+                    //         the_title('<p>','</p>');
+                    //         $contenu = get_the_content();
+                    //         $contenu = wp_trim_words($contenu, 10);
+                    //         echo $contenu;
+                    //     }
+
+                        if (have_posts()) : while(have_posts()) :  
+                            the_post(); 
+                            the_title('<p>','</p>');
+                            the_content();
+                        endwhile;
+                    endif;
+                ?>
+
             <blockquote class="citation">
                 Voici un endroit pour placer des citations pour expliquer les informations ou autres choses. C'est un zone de texte utile et voilà, conne journée tous le monde :)
                 </blockquote>
