@@ -363,4 +363,19 @@ footer .recherche, .sociaux, .btnFooter {
 }
 .sociaux path:hover {
   color: rgb(210, 246, 255);
+}
+
+.section_cours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.carte {
+  display: flex;
+  border: 1px solid gray;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 25%;
+  background-color: vhsl(var(--couleur-accueil));
 }/*# sourceMappingURL=style.css.map */
