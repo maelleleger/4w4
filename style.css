@@ -85,6 +85,7 @@ header {
 
 #accueil {
   display: flex;
+  padding-top: 5rem;
   flex-direction: column;
   background-color: var(--couleur-arriere-accueil);
   color: rgb(255, 252, 233);
@@ -124,6 +125,13 @@ header {
 /*
 https://chrisburnell.com/clamp-calculator/
 */
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
@@ -242,10 +250,6 @@ h6 {
   background-position: 50% 100%;
   background-size: 15rem;
   color: rgb(200, 245, 255);
-}
-
-.entete__header h1, h2, h4 {
-  margin-bottom: 10rem;
 }
 
 .entete__header .btnEvent {
@@ -372,6 +376,7 @@ footer .recherche, .sociaux, .btnFooter {
   flex-wrap: wrap;
   gap: 1rem;
   padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 .carte {
@@ -382,6 +387,13 @@ footer .recherche, .sociaux, .btnFooter {
   border-radius: 10px;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 1 20%;
+  flex: 0 1 50%;
   background-color: rgb(255, 243, 209);
+  padding: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .carte {
+    flex: 0 1 20%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -50,17 +50,20 @@
                     
                     if (have_posts()):
                             while(have_posts()): the_post(); 
-                            $titre = get_the_title();
-                            $sigle = substr($titre,0,7);
-                            
+                            $titre = get_the_title(); //le titre, le sigle et la durée ensemble
+                            $nomCours = substr($titre, 7, -6); //le titre du cours
+                            $sigle = substr($titre,0, 7); //le sigle du cours
+                            $duree = substr($titre, -6); //la durée du cours
                             // strpos()
-                            //somstr
+                            //substr
                         ?>
                             <div class="carte">
-                                <h5><?php echo $sigle; ?></h5>
+                                <h5><?php echo $sigle; ?></h5> <!-- le sigle du cours -->
                                 <!-- <h4><php the_title(); ?></h4> -->
-                                <h4><?php echo $titre; ?></h4>
-                                <p><?php echo wp_trim_words(get_the_content(),10); ?></p>
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4><?php echo $nomCours; ?></h4> <!-- le titre du cours -->
+                                <h4><?php echo $duree; ?></h4> <!-- la durée du cours -->
+                                <p><?php echo wp_trim_words(get_the_content(), 10); ?></p> <!-- après 10 mots, il y a des "..." -->
                             </div>
                            <?php endwhile; ?>
                         <?php endif; ?>

@@ -38,6 +38,7 @@ header{
 }
 #accueil{
     display: flex;
+    padding-top: 5rem;
     flex-direction: column;
     background-color: var(--couleur-arriere-accueil);
     color: rgb(255, 252, 233);
