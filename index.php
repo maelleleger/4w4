@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thème du groupe #1</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_url() . '/normalize.css'; ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_url() . '/style.css'; ?>">
+    <!-- <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
 
 
     <link rel="preconnect" href=" https://fonts.googleapis.com">
@@ -29,7 +31,7 @@
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2>
-            <div class="section_cours"></div>
+            <div class="section_cours">
 
                 <!-- // boucle pour afficher tous les posts
                     // if (have_posts()){
@@ -42,19 +44,30 @@
                     //     } -->
 
                     <!-- boucle pour afficher la carte avec les posts -->
-                    <?php if (have_posts()):
-                            while(have_posts()): the_post(); ?>
+
+
+                    <?php 
+                    
+                    if (have_posts()):
+                            while(have_posts()): the_post(); 
+                            $titre = get_the_title();
+                            $sigle = substr($titre,0,7);
+                            
+                            // strpos()
+                            //somstr
+                        ?>
                             <div class="carte">
-                                <h4><?php the_title(); ?></h4>
+                                <h5><?php echo $sigle; ?></h5>
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <h4><?php echo $titre; ?></h4>
                                 <p><?php echo wp_trim_words(get_the_content(),10); ?></p>
                             </div>
                            <?php endwhile; ?>
                         <?php endif; ?>
 
-
-            <blockquote class="citation">
+            <!-- <blockquote class="citation">
                 Voici un endroit pour placer des citations pour expliquer les informations ou autres choses. C'est un zone de texte utile et voilà, conne journée tous le monde :)
-                </blockquote>
+                </blockquote> -->
         </section>
     </div>
     <div id="evenement" class="global">
