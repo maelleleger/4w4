@@ -15,11 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="menu" class="gobal">
+        <div class="entete_menu">
+            <?php wp_nav_menu(); ?>
+        </div>
+    </div>
     <div id="entete" class="global">
         <header class="entete__header">
-            <h1>Thème du groupe #1</h1>
-            <h2>4w4 - conception d'interface <br> et développement web</h2>
-            <h4>TIM - Collège de Maisonneuve</h4>
+            <h1 class="bgc-text">Thème du groupe #1</h1>
+            <h2 class="bgc-text">4w4 - conception d'interface <br> et développement web</h2>
+            <h4 class="bgc-text">TIM - Collège de Maisonneuve</h4>
             <button class="btnEvent">Événement</button>
         </header>
         <div class="vague">
@@ -54,6 +59,8 @@
                             $nomCours = substr($titre, 7, -6); //le titre du cours
                             $sigle = substr($titre,0, 7); //le sigle du cours
                             $duree = substr($titre, -6); //la durée du cours
+                            // $pos_parenthese = strpos($titre, '(')
+                            // $duree = substr($titre, $pos_parenthese);
                             // strpos()
                             //substr
                         ?>

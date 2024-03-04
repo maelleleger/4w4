@@ -1,0 +1,10 @@
+.menu_entete_container{
+    border: 1px solid black;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

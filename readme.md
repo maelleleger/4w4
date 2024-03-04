@@ -1,21 +1,19 @@
-# labo3
+# labo4
 # par Maëlle Léger
 
-## Adaptation du thème de exercice #1
+## Adaptation du thème du labo3
 ## introduction a WordPress
 
-## poursuit les modifications de l'exercice 1
+## poursuit les modifications du labo3
 
-- Adaptation du thème de exercice #1
+- Adaptation du thème du labo3
 - Création du modèle index.php
 - Création de la branche labo3
 - minimum 3 commits
 - Un Readme.md
 
 à réaliser :
-- créer un tableau à l'aide de la base de données
-- séléctionner la durée
-- séparer le titre du sigle
+- modifier l'apparence du menu
 - créer une page GitHub
 - améliorer la pagination
 - ajouter des nouveaux éléments html

@@ -1,0 +1,8 @@
+// ça sert à mettre un filtre transparent blanc sur les titres
+.bgc-text{
+    background-color: rgba(white, -1);
+    padding: 15px 20px;
+    @media screen and (min-width: 1000px){
+        background-color: transparent;
+    }
+}
