@@ -17,12 +17,17 @@ header{
     justify-content: center;
     min-height : 40vh;
 }
-.global > header{
-    flex: 0 1 1300px;
+// .global > header{
+//     flex: 0 1 1300px;
+// }
+
+.entete_header, .entete_menu{
+    flex: 0 1 1700px;
+    padding: 3rem 0 0 0;
+    
 }
 
 .global > section,
-.global > header,
 .global > footer {
     flex : 0 1 1100px;
     display : flex;

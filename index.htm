@@ -12,13 +12,30 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <div id="entete" class="global">
-        <header class="entete__header">
-            <h1>Thème du groupe #1</h1>
-            <h2>4w4 - conception d'interface <br> et développement web</h2>
-            <h4>TIM - Collège de Maisonneuve</h4>
+
+    <header id="menu" class="gobal">
+        <div class="entete_menu">
+            <label id="burger" for="check_burger"></label>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <input type="checkbox" name="" id="check_burger">
+        <nav class="menu-cours-container"><ul id="menu-cours" class="menu"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8080/4W4-maelle/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D (75h)</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8080/4W4-maelle/2020/10/07/360-4j4-creation-de-jeu-en-equipe-105h/">Création de jeu en équipe (105h)</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4W4-maelle/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">Conception d’interfaces et développement Web (90h)</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4W4-maelle/2020/10/07/582-4c2-gestion-de-projets-multimedias/">Gestion de projets multimédias (45h)</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39"><a href="http://localhost:8080/4W4-maelle/2020/10/07/582-6n3-stage-285h/">582-6N3 Stage (285h)</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#accueil">accueil</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#galerie">galerie</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#evenement">evenement</a></li>
+</ul></nav>        </div>
+    </header>
+<div id="entete" class="global">
+        <section class="entete__header">
+            <h1 class="bgc-text">Thème du groupe #1</h1>
+            <h2 class="bgc-text">4w4 - conception d'interface <br> et développement web</h2>
+            <h4 class="bgc-text">TIM - Collège de Maisonneuve</h4>
             <button class="btnEvent">Événement</button>
-        </header>
+        </section>
+
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" style="fill:var(--couleur-arriere-accueil)"></path>
@@ -28,124 +45,241 @@
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2>
+            <div class="section_cours">
+
+                <!-- // boucle pour afficher tous les posts
+                    // if (have_posts()){
+                    //     while(have_posts()){
+                    //         the_post();
+                    //         the_title('<p>','</p>');
+                    //         $contenu = get_the_content();
+                    //         $contenu = wp_trim_words($contenu, 10);
+                    //         echo $contenu;
+                    //     } -->
+
+                    <!-- boucle pour afficher la carte avec les posts -->
+
+
+                                                <div class="carte">
+                                <h5>582-1M1</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Création vidéo</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-4C2</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Gestion de projets multimédias</h4> <!-- le titre du cours -->
+                                <h4> (45h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours initie l'étudiant aux rudiments de la gestion d’un…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-4W4</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Conception d’interfaces et développement Web</h4> <!-- le titre du cours -->
+                                <h4> (90h)</h4> <!-- la durée du cours -->
+                                <p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-4J4</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Création de jeu en équipe </h4> <!-- le titre du cours -->
+                                <h4>(105h)</h4> <!-- la durée du cours -->
+                                <p>Dans ce cours qui s'appuie sur une pédagogie par projets,…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-4PA</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Interfaces Web réactives et animées – Cours au choix</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>En session 4, l'étudiant doit choisir entre ce cours et…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-4MB</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Animation 3D</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>En session 4, l'étudiant doit choisir entre ce cours et…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>393-5E1</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Méthodes de recherche et préparation au marché du travail</h4> <!-- le titre du cours -->
+                                <h4> (45h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours permet à l’étudiant d'acquérir des habiletés en recherche,…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>350-5N1</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Communication et dynamique d’une équipe de travail</h4> <!-- le titre du cours -->
+                                <h4> (45h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours permet à l’étudiant de développer ses habiletés en…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-5W5</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4>	Projet Web en équipe </h4> <!-- le titre du cours -->
+                                <h4>(105h)</h4> <!-- la durée du cours -->
+                                <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-5MB</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4>	Technologies émergentes et avancées – volet Création</h4> <!-- le titre du cours -->
+                                <h4> (60h)</h4> <!-- la durée du cours -->
+                                <p>En session 5, l'étudiant doit choisir entre ce cours et…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-3J3</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Création de jeu 3D</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours permet à l'étudiant d'intégrer différents types de médias…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-3W3</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Création de sites Web dynamiques</h4> <!-- le titre du cours -->
+                                <h4> (90h)</h4> <!-- la durée du cours -->
+                                <p>Dans ce cours, les notions acquises dans les cours «…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-3C1</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Design d’interactivité</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>L’étudiant apprend à concevoir des expériences interactives en plaçant les…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-1M1</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Création vidéo</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-1M2</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Conception graphique et imagerie matricielle</h4> <!-- le titre du cours -->
+                                <h4> (90h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours initie l'étudiant aux rudiments de la conception et…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-1W1</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Mise en page Web</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>Dans ce cours, l'étudiant apprend les techniques de mise en…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-1J1</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Animation et interactivité en jeu</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours est consacré aux concepts de base nécessaires à…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-2M3</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Effets spéciaux et animation</h4> <!-- le titre du cours -->
+                                <h4> (60h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours permet d'approfondir la formation de l’étudiant en matière…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-2M4</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Conception graphique et imagerie vectorielle</h4> <!-- le titre du cours -->
+                                <h4> (90h)</h4> <!-- la durée du cours -->
+                                <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-2W2</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4>	Animation et interactivité Web</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>Ce cours permet à l'étudiant d'acquérir les compétences de base…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-2J2</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4>	Création de jeu 2D</h4> <!-- le titre du cours -->
+                                <h4> (60h)</h4> <!-- la durée du cours -->
+                                <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-3M5</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4>	Imagerie 3D</h4> <!-- le titre du cours -->
+                                <h4> (75h)</h4> <!-- la durée du cours -->
+                                <p>Dans ce cours, l’étudiant est initié au monde de l’imagerie…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                       <div class="carte">
+                                <h5>582-6N3</h5> <!-- le sigle du cours -->
+                                <!-- <h4><php the_title(); ?></h4> -->
+                                <!-- <h4><php echo $titre; ?></h4> -->
+                                <h4> Stage </h4> <!-- le titre du cours -->
+                                <h4>(285h)</h4> <!-- la durée du cours -->
+                                <p>Le stage en entreprise complète la formation de l’étudiant en…</p> <!-- après 10 mots, il y a des "..." -->
+                            </div>
+                                                   
             <!-- <blockquote class="citation">
                 Voici un endroit pour placer des citations pour expliquer les informations ou autres choses. C'est un zone de texte utile et voilà, conne journée tous le monde :)
                 </blockquote> -->
-            <div class="section_cours">  
-
-                <div class="carte">
-                      <h4>582-1M1 Création vidéo (75h)</h4>
-                      <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-4C2 Gestion de projets multimédias (45h)</h4>
-                      <p>Ce cours initie l'étudiant aux rudiments de la gestion d’un…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-4W4 Conception d’interfaces et développement Web (90h)</h4>
-                      <p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-4J4 Création de jeu en équipe (105h)</h4>
-                      <p>Dans ce cours qui s'appuie sur une pédagogie par projets,…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-4PA Interfaces Web réactives et animées &#8211; Cours au choix (75h)</h4>
-                      <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-4MB Animation 3D (75h)</h4>
-                      <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>393-5E1 Méthodes de recherche et préparation au marché du travail (45h)</h4>
-                      <p>Ce cours permet à l’étudiant d'acquérir des habiletés en recherche,…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>350-5N1 Communication et dynamique d’une équipe de travail (45h)</h4>
-                      <p>Ce cours permet à l’étudiant de développer ses habiletés en…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-5W5	Projet Web en équipe (105h)</h4>
-                      <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-5MB	Technologies émergentes et avancées – volet Création (60h)</h4>
-                      <p>En session 5, l'étudiant doit choisir entre ce cours et…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-3J3 Création de jeu 3D (75h)</h4>
-                      <p>Ce cours permet à l'étudiant d'intégrer différents types de médias…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-3W3 Création de sites Web dynamiques (90h)</h4>
-                      <p>Dans ce cours, les notions acquises dans les cours «…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-1M2 Conception graphique et imagerie matricielle (90h)</h4>
-                      <p>Ce cours initie l'étudiant aux rudiments de la conception et…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-1W1 Mise en page Web (75h)</h4>
-                      <p>Dans ce cours, l'étudiant apprend les techniques de mise en…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-1J1 Animation et interactivité en jeu (75h)</h4>
-                      <p>Ce cours est consacré aux concepts de base nécessaires à…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-2M3 Effets spéciaux et animation (60h)</h4>
-                      <p>Ce cours permet d'approfondir la formation de l’étudiant en matière…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-2M4 Conception graphique et imagerie vectorielle (90h)</h4>
-                      <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-2W2	Animation et interactivité Web (75h)</h4>
-                      <p>Ce cours permet à l'étudiant d'acquérir les compétences de base…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-2J2	Création de jeu 2D (60h)</h4>
-                      <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-3M5	Imagerie 3D (75h)</h4>
-                      <p>Dans ce cours, l’étudiant est initié au monde de l’imagerie…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-3C1 Design d’interactivité (75h)</h4>
-                      <p>L’étudiant apprend à concevoir des expériences interactives en plaçant les…</p>
-                  </div>
-                         <div class="carte">
-                      <h4>582-6N3 Stage (285h)</h4>
-                      <p>Le stage en entreprise complète la formation de l’étudiant en…</p>
-                  </div>
-            </div>
-        </section>
+        </div></section>
     </div>
     <div id="evenement" class="global">
         <section>
             <h2>Événement</h2>
         </section>
-        <div class="vague">
+        <!-- <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" style="fill:var(--couleur-arriere-evenement)"></path>
             </svg>
-        </div>
-    </div>
+        </div> -->
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path class="remplissage" d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
+            </svg>
+        </div>    </div>
     <div id="galerie" class="global diagonale">
         <section>
             <h2>Galerie</h2>
         </section>
     </div>
     <div id="footer" class="global">
-        <div class="vagueFooter">
+    <!-- <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" style="fill:var(--couleur-arriere-galerie)"></path>
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" style="fill:var(--couleur-arriere-evenement)"></path>
             </svg>
-        </div>
-        <footer>
+        </div> -->
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path class="remplissage" d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
+            </svg>
+        </div>        <footer>
             <h2>Footer</h2>
             <form class="recherche" action="">
                 <input class="recherche_input" type="search" name="" id="" placeholder="recherche">
@@ -165,5 +299,6 @@
             <button class="btnFooter"><a href="">Vers le haut</a></button>
         </footer>
     </div>
+
 </body>
 </html>

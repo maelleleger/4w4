@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thème du groupe #1</title>
-    <!-- <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css'; ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
+<?php get_header(); ?>
 
-
-    <link rel="preconnect" href=" https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="menu" class="gobal">
-        <div class="entete_menu">
-            <?php wp_nav_menu(); ?>
-        </div>
-    </div>
-    <div id="entete" class="global">
-        <header class="entete__header">
+<div id="entete" class="global">
+        <section class="entete__header">
             <h1 class="bgc-text">Thème du groupe #1</h1>
             <h2 class="bgc-text">4w4 - conception d'interface <br> et développement web</h2>
             <h4 class="bgc-text">TIM - Collège de Maisonneuve</h4>
             <button class="btnEvent">Événement</button>
-        </header>
+        </section>
+
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" style="fill:var(--couleur-arriere-accueil)"></path>
@@ -84,11 +65,7 @@
         <section>
             <h2>Événement</h2>
         </section>
-        <div class="vague">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" style="fill:var(--couleur-arriere-evenement)"></path>
-            </svg>
-        </div>
+        <?php get_template_part("gabarit/vague"); ?>
     </div>
     <div id="galerie" class="global diagonale">
         <section>
@@ -96,11 +73,7 @@
         </section>
     </div>
     <div id="footer" class="global">
-        <div class="vagueFooter">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" style="fill:var(--couleur-arriere-galerie)"></path>
-            </svg>
-        </div>
+    <?php get_template_part("gabarit/vague"); ?>
         <footer>
             <h2>Footer</h2>
             <form class="recherche" action="">

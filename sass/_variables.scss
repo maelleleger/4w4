@@ -42,13 +42,13 @@
     --hu2 : calc(var(--hu1) + 180); //couleur complémentaire
     --hu3 : calc(var(--hu1) + 224); //couleur complémentaire 2
      --couleur-arriere-entete : hsl(var(--hu5), var(--s-couleur-arriere), 45%);
-     --couleur-arriere-accueil : hsl(var(--hu3), var(--s-couleur-arriere), 60%);
+     --couleur-arriere-accueil : hsl(var(--hu5), var(--s-couleur-arriere), 60%);
      --couleur-arriere-evenement : hsl(var(--hu2), var(--s-couleur-arriere), 70%);
      --couleur-arriere-galerie : hsl(var(--hu5), var(--s-couleur-arriere), 80%);
      --couleur-arriere-footer : hsl(var(--hu5), var(--s-couleur-arriere), 85%);
 
      --couleur-arriere-entete : hsl(var(--hu5), var(--s-couleur-arriere), 20%);
-     --couleur-arriere-accueil : hsl(var(--hu3), var(--s-couleur-arriere), 25%);
+     --couleur-arriere-accueil : hsl(var(--hu5), var(--s-couleur-arriere), 25%);
      --couleur-arriere-evenement : hsl(var(--hu2), var(--s-couleur-arriere), 30%);
      --couleur-arriere-galerie : hsl(var(--hu5), var(--s-couleur-arriere), 35%);
      --couleur-arriere-footer : hsl(var(--hu5), var(--s-couleur-arriere), 40%);
@@ -57,4 +57,7 @@
      --couleur-rouge-foncee : rgb(88, 0, 0);
      --couleur-rouge-clair : rgb(171, 51, 51);
      --couleur-brun-clair : rgb(121, 85, 85);
+
+     --couleur-arriere-vague : hsl(var(--hu5), var(--s-couleur-arriere), 45%);
+    
 }

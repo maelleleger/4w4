@@ -7,6 +7,10 @@
     line-height: 0;
 }
 
+.remplissage{
+    fill: var(--couleur-arriere-vague);
+}
+
 .vague svg {
     position: relative;
     display: block;
